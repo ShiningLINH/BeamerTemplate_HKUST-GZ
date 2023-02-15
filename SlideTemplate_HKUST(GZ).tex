@@ -1,0 +1,193 @@
+\documentclass[11pt, fontset=windows, ignorenonframetext]{beamer}  % ignorenonframetext 忽略任何 frame 之外的所有文本
+
+\usepackage[backend=bibtex]{biblatex}
+\usepackage[noindent]{ctex} % 中文
+\usepackage[T1]{fontenc} %  风格数学字体
+\usepackage{hyperref} % 超链接命令
+\usepackage{graphicx} % 支持插图
+\usepackage{subfigure} % 子图片
+\usepackage{times} % 使用 Times New Roman 字体
+\usepackage{bookmark}
+\usepackage{booktabs} % 三线表
+\usepackage{latexsym} % 数学符号环境
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,calligra,mathrsfs}
+\usepackage{xcolor,comment,pstricks,listings,stackengine}
+\usepackage{multicol,multirow} % 多栏
+\usepackage{array} % 表格
+\usepackage{ragged2e} % 段落对齐
+\usepackage[english]{babel}
+\usepackage{enumerate} % 列表环境
+\usepackage{bm} % 提供将数学符号加粗的命令 \bm
+\usepackage{csquotes} % 引号
+\usepackage{fontspec} % 设置字体
+
+
+
+%-------- theme --------
+\usetheme{Madrid}
+\usecolortheme{default}
+\useinnertheme{circles}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]  % 去掉 block 的阴影
+% no navigation icons:
+\usenavigationsymbolstemplate{}
+
+%--------------- color --------------------
+\definecolor{ustgold}{RGB}{153, 102, 0}
+\definecolor{ustblue}{RGB}{0, 51, 102}
+
+\definecolor{Logo1}{rgb}{0.208, 0.2865, 0.373}
+\definecolor{Logo2}{rgb}{0.000, 0.674, 0.863}
+
+\setbeamercolor*{palette primary}{bg=ustblue, fg=white}
+\setbeamercolor*{palette secondary}{bg=ustblue, fg=white}
+\setbeamercolor*{palette tertiary}{bg=white, fg=ustblue}
+
+\setbeamercolor{title}{fg=ustblue,bg=white}         % Title of presentation
+\setbeamercolor{section title}{fg=ustblue,bg=white}
+\setbeamercolor{subsection title}{fg=ustblue, bg=white}
+\setbeamercolor{frametitle}{fg=ustblue,bg=white}
+% set the blocks to match the beaver colors:
+\setbeamercolor{structure}{fg=ustblue,bg=white}
+% inside the blocks to grey:
+\setbeamercolor{block body}{bg=gray!10!white}
+%------------------------------------------------------------
+
+
+%--------------- START PREAMBLE ---------------
+%This block of code defines the information to appear in the title page
+
+\title[]{The amazing title of your presentation}
+
+\subtitle{And its subtitle}
+
+\author[Iura Arata] % (optional)
+{Iura Arata}
+
+\institute[HKUST(GZ)] % (optional)
+{
+FinTech Thrust, Society Hub\\[0.3em]
+The Hong Kong University of Science and Technology (Guangzhou)
+}
+
+\date[Sep 2022] % (optional)
+{Sep 2022}
+
+\logo{\includegraphics[height=.5cm]{./Figure/UST-GZ-logo-2.pdf}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+\addtocounter{framenumber}{-1}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{First section}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{Sample frame title}
+This is a text in second frame. For the sake of showing an example.
+
+\begin{itemize}
+    \item<1-> Text visible on slide 1
+    \item<2-> Text visible on slide 2
+    \item<3> Text visible on slides 3
+    \item<4-> Text visible on slide 4
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+In this slide \pause
+
+the text will be partially visible \pause
+
+And finally everything will be there
+\end{frame}
+%---------------------------------------------------------
+
+\section{Second section}
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+
+\end{document}
