@@ -1,4 +1,4 @@
-# BeamerTemplete_HKUST(GZ)
+# BeamerTemplete_HKUST-GZ
 
 LaTeX Beamer Template for HKUST(GZ)
 - - -
