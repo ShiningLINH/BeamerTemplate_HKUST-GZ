@@ -1,11 +1,11 @@
 # BeamerTemplete_HKUSTGZ
 
-LaTeX Beamer Template for HKUST(GZ)
+**LaTeX Beamer Template for HKUST(GZ)**
 
-** Welcome to STAR, FORK or WATCH. **
+*Welcome to STAR, FORK or WATCH.*
 
 ## Feature Highlight
-- Color scheme reference: HKUST Brand Guidelines
+- Color scheme reference: HKUST brand guidelines
 - Code Comment: clear and detailed
 - Design: ode to simplicity (～￣▽￣)～ 
 
