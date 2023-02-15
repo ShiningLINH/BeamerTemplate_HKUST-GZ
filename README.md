@@ -1,6 +1,7 @@
 # BeamerTemplete_HKUST(GZ)
 
 LaTeX Beamer Template for HKUST(GZ)
+- - -
 
 ## Feature Highlight
 - Color scheme reference: HKUST brand guidelines
