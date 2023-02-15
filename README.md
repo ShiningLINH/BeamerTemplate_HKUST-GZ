@@ -1,6 +1,6 @@
 # BeamerTemplete_HKUST(GZ)
 
-**LaTeX Beamer Template for HKUST(GZ)**
+LaTeX Beamer Template for HKUST(GZ)
 
 *Welcome to STAR, FORK or WATCH.*
 
